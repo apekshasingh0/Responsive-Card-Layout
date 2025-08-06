@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Project</title>
+    <style>
+        
+      body {
+        background-color: black;
+        color: white;
+      }
+      .card-container {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+      }
+            
+      h1 {
+        text-align: center;
+        margin: 20px 0;
+      }
+        
+      .card-container .card {
+        background-color: palegreen;
+        padding: 30px;
+        width: 300px;
+        height: 100px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px #ccc;
+      }
+     
+      @media(max-width:768px){
+        body{
+            background-color: palevioletred;
+        }
+        .card{
+            width:50%
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Responsive Card Layout</h1>
+    <div class="card-container">
+      <div class="card">card 1</div>
+      <div class="card">card 2</div>
+      <div class="card">card 3</div>
+    </div>
+  </body>
+</html>
